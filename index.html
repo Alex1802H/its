@@ -3,83 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enfermedades de Transmisión Sexual (ETS)</title>
-    <!-- Bootstrap CSS (sin CSS personalizado) -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Información sobre ITS</title>
+    <!-- Enlace al CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Contenedor Principal -->
-    <div class="container">
-        <h1 class="text-center my-4">Enfermedades de Transmisión Sexual (ETS)</h1>
-
-        <!-- Sección VIH y SIDA -->
-        <div class="row mb-4">
-            <div class="col">
-                <h2>VIH</h2>
-                <p>El VIH es un virus que ataca el sistema inmunológico del cuerpo y puede llevar al SIDA si no se trata adecuadamente. Se transmite principalmente a través de relaciones sexuales sin protección y contacto con sangre infectada.</p>
-            </div>
-            <div class="col">
-                <h2>SIDA</h2>
-                <p>El SIDA es la etapa final de la infección por VIH. A medida que el sistema inmunológico se debilita, el cuerpo se vuelve más susceptible a infecciones y ciertos tipos de cáncer.</p>
-            </div>
-        </div>
-
-        <!-- Sección HPV y Gonorrea -->
-        <div class="row mb-4">
-            <div class="col">
-                <h2>HPV</h2>
-                <p>El Virus del Papiloma Humano (HPV) es la ITS más común y puede causar verrugas genitales y ciertos tipos de cáncer, como el cáncer cervical.</p>
-            </div>
-            <div class="col">
-                <h2>Gonorrea</h2>
-                <p>La gonorrea es una infección bacteriana que puede afectar los genitales, el recto y la garganta. Puede causar complicaciones graves si no se trata.</p>
-            </div>
-        </div>
-
-        <!-- Sección Clamidia y Sífilis -->
-        <div class="row mb-4">
-            <div class="col">
-                <h2>Clamidia</h2>
-                <p>La clamidia es una infección bacteriana común que puede dañar los órganos reproductivos si no se trata. A menudo no presenta síntomas.</p>
-            </div>
-            <div class="col">
-                <h2>Sífilis</h2>
-                <p>La sífilis es una infección bacteriana que se desarrolla en varias etapas y puede causar graves problemas de salud si no se trata, incluyendo daños al corazón y al cerebro.</p>
-            </div>
-        </div>
-
-        <!-- Sección Herpes y Hepatitis B -->
-        <div class="row mb-4">
-            <div class="col">
-                <h2>Herpes</h2>
-                <p>El herpes genital es causado por el virus del herpes simple y provoca llagas dolorosas en la zona genital. Es una infección de por vida, pero los síntomas pueden ser controlados.</p>
-            </div>
-            <div class="col">
-                <h2>Hepatitis B</h2>
-                <p>La hepatitis B es un virus que afecta al hígado y puede llevar a una enfermedad hepática crónica. Se transmite a través de fluidos corporales, incluyendo la sangre y el semen.</p>
-            </div>
-        </div>
-
-        <!-- Métodos para Prevenir ITS -->
-        <div class="row mb-4">
-            <div class="col">
-                <h2>Métodos para Prevenir ITS</h2>
-                <ul>
-                    <li>Usar preservativos de manera consistente y correcta.</li>
-                    <li>Vacunarse contra el HPV y la hepatitis B.</li>
-                    <li>Limitar el número de parejas sexuales.</li>
-                    <li>Realizarse pruebas regularmente y tratarse de inmediato si es necesario.</li>
-                    <li>Evitar compartir agujas u otros objetos que puedan estar contaminados con sangre.</li>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ITS Info</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#enfermedades">Enfermedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prevencion">Prevención</a>
+                    </li>
                 </ul>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <!-- Bootstrap JS y dependencias -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Encabezado -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Información sobre Enfermedades de Transmisión Sexual</h1>
+            <p class="lead">Conoce las principales ITS y cómo prevenirlas</p>
+        </div>
+    </header>
+
+    <!-- Sección de Enfermedades -->
+    <section id="enfermedades" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Principales Enfermedades de Transmisión Sexual</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">VIH</h5>
+                            <p class="card-text">El VIH es un virus que ataca el sistema inmunológico, debilitándolo y aumentando el riesgo de infecciones y ciertas enfermedades.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Sida</h5>
+                            <p class="card-text">El Sida es la etapa avanzada del VIH, donde el sistema inmunológico está gravemente dañado, lo que facilita el desarrollo de enfermedades graves.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">HPV</h5>
+                            <p class="card-text">El Virus del Papiloma Humano (HPV) puede causar verrugas genitales y está relacionado con ciertos tipos de cáncer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Gonorrea</h5>
+                            <p class="card-text">La gonorrea es una infección bacteriana que puede afectar los genitales, el recto y la garganta, y es tratable con antibióticos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Clamidia</h5>
+                            <p class="card-text">La clamidia es una infección bacteriana común que puede causar dolor y, si no se trata, problemas graves de salud reproductiva.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Sífilis</h5>
+                            <p class="card-text">La sífilis es una infección bacteriana que progresa en etapas y puede causar complicaciones graves si no se trata.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Herpes</h5>
+                            <p class="card-text">El herpes es una infección viral que causa llagas dolorosas, especialmente en la boca o en los genitales.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Hepatitis B</h5>
+                            <p class="card-text">La hepatitis B es una infección viral que afecta el hígado y puede provocar daño hepático crónico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Prevención -->
+    <section id="prevencion" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Métodos para Prevenir ITS</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Uso de preservativos</h5>
+                            <p class="card-text">El uso correcto y constante de preservativos es uno de los métodos más efectivos para prevenir la transmisión de ITS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Vacunación</h5>
+                            <p class="card-text">Existen vacunas que pueden proteger contra el HPV y la hepatitis B, disminuyendo el riesgo de contraer estas infecciones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Pruebas regulares</h5>
+                            <p class="card-text">Realizarse pruebas regularmente ayuda a detectar ITS en etapas tempranas y permite recibir tratamiento adecuado a tiempo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 ITS Info. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Enlace a JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
